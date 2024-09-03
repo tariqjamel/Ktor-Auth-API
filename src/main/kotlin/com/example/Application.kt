@@ -21,10 +21,10 @@ fun main(args: Array<String>) {
 }
 
 fun Application.module() {
-    val mongoPw = System.getenv("MONGO_PW")
+    val mongoPw = System.getenv("MONGO_PW") // your mongodb password
     val dbName = "ktor-auth"
     val db = KMongo.createClient(
-        connectionString = "mongodb+srv://dot:$mongoPw@cluster0.wgd8f.mongodb.net/$dbName?retryWrites=true&w=majority"
+        connectionString = " /*Your Mongo db data source*/"
     ).coroutine
         .getDatabase(dbName)
     val userDataSource = MongoUserDataSource(db)
@@ -40,7 +40,7 @@ fun Application.module() {
 
 //    GlobalScope.launch {
 //        val user = User(
-//            username = "tariqfromAS",
+//            username = "tariq",
 //            password = "password",
 //            salt = "salt"
 //        )
