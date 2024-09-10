@@ -52,6 +52,18 @@ The repository also includes a sample application named **Ktor Authentication Ap
 2. Build and run the app on an emulator or physical device.
 3. Ensure the IP address and MongoDB connection string in the app match your local setup.
 
+## MongoDB Data Viewing
+
+You can view the stored data in MongoDB by following these steps:
+
+1. Open MongoDB Compass or your preferred MongoDB client.
+2. Connect to your MongoDB instance using the connection string provided in your configuration.
+3. Navigate to the database used by the API.
+4. Go to the **Collections** tab to view and manage the data. Look for a collection named **`service`** where user data and other related information are stored.
+
+### Screenshot
+<img  src="mongodb_collection.png" width="20%" height="20%">
+
 ## API Endpoints
 
 ### Authentication Endpoints
@@ -77,6 +89,9 @@ This endpoint allows a new user to sign up by providing a username, password, an
 - **Body**:
   - `username`: The desired username.
   - `password`: The password for the new account.
+ 
+### Screenshot
+<img  src="postman_signup.png" width="20%" height="20%">
 
 ### `POST /api/auth/signin`
 
@@ -93,6 +108,9 @@ This endpoint allows a user to sign in using their username and password. Upon s
 - **Body**:
   - `username`: The username of the user.
   - `password`: The user's password.
+
+### Screenshot
+<img  src="postman_signin.png" width="20%" height="20%">
 
 ### `GET /api/auth/secret`
 
@@ -111,6 +129,11 @@ This endpoint retrieves user secrets based on the user ID provided in the reques
 
 - `userId`: The unique identifier of the user whose secrets you want to retrieve.
 
+### Screenshot
+<img  src="postman_signup.png" width="20%" height="20%">
+
+## Responses
+
 #### Success Response
 
 - **Status**: 200 OK
@@ -120,4 +143,14 @@ This endpoint retrieves user secrets based on the user ID provided in the reques
 
 - **401 Unauthorized**: Invalid or missing JWT token.
 - **404 Not Found**: User not found or user does not have any secrets.
+
+## Configuration Notes
+
+- Ensure your MongoDB instance is running and accessible.
+- Modify the `.env` or configuration files as needed to match your IP and database credentials.
+- The API uses SHA-256 for password hashing, which provides enhanced security.
+
+## Contributing
+
+Contributions are welcome! If you have any suggestions, bug fixes, or feature implementations, please submit a pull request.
 
