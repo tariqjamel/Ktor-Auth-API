@@ -70,9 +70,9 @@ You can view the stored data in MongoDB by following these steps:
 
 | Method | Endpoint             | Description                                           |
 |--------|----------------------|-------------------------------------------------------|
-| POST   | `/api/auth/login`    | Logs in a user and generates a JWT token.             |
-| POST   | `/api/auth/signup`   | Registers a new user with username, hashed password, and address. |
-| GET    | `/api/auth/secret`   | Retrieves user secrets based on the provided user ID. |
+| POST   | `/ipaddress/login`    | Logs in a user and generates a JWT token.             |
+| POST   | `/ipaddress/signup`   | Registers a new user with username, hashed password, and address. |
+| GET    | `/ipaddress/secret`   | Retrieves user secrets based on the provided user ID. |
 
 ### `POST /ipaddress/signup`
 
