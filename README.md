@@ -130,7 +130,7 @@ This endpoint retrieves user secrets based on the user ID provided in the reques
 - `userId`: The unique identifier of the user whose secrets you want to retrieve.
 
 ### Screenshot
-<img  src="postman_signup.png" width="80%" height="50%">
+<img  src="postman_secret.png" width="80%" height="50%">
 
 ## Responses
 
