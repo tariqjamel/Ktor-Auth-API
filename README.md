@@ -44,11 +44,11 @@ The server should now be running locally.
 
 ### 5. Ktor Authentication App
 
-The repository also includes a sample application named **Ktor Authentication App**, which demonstrates how to connect and use the API.
+The repository also includes a sample application named [**Ktor Authentication App**](https://github.com/tariqjamel/Ktor-Authentication-App), which demonstrates how to connect and use the API.
 
 #### Steps to Run the App
 
-1. Navigate to the **Ktor Authentication App** folder within the repository.
+1. Navigate to the [**Ktor Authentication App**](https://github.com/tariqjamel/Ktor-Authentication-App) folder within the repository.
 2. Build and run the app on an emulator or physical device.
 3. Ensure the IP address and MongoDB connection string in the app match your local setup.
 
@@ -74,7 +74,7 @@ You can view the stored data in MongoDB by following these steps:
 | POST   | `/api/auth/signup`   | Registers a new user with username, hashed password, and address. |
 | GET    | `/api/auth/secret`   | Retrieves user secrets based on the provided user ID. |
 
-### `POST /api/auth/signup`
+### `POST /ipaddress/signup`
 
 #### Description
 
@@ -83,7 +83,7 @@ This endpoint allows a new user to sign up by providing a username, password, an
 #### Request
 
 - **Method**: `POST`
-- **URL**: `/api/auth/signup`
+- **URL**: `/ipaddress/signup`
 - **Headers**:
   - `Content-Type`: `application/json`
 - **Body**:
@@ -93,7 +93,7 @@ This endpoint allows a new user to sign up by providing a username, password, an
 ### Screenshot
 <img  src="postman_signup.png" width="80%" height="50%">
 
-### `POST /api/auth/signin`
+### `POST /ipaddress/signin`
 
 #### Description
 
@@ -102,7 +102,7 @@ This endpoint allows a user to sign in using their username and password. Upon s
 #### Request
 
 - **Method**: `POST`
-- **URL**: `/api/auth/signin`
+- **URL**: `/ipaddress/signin`
 - **Headers**:
   - `Content-Type`: `application/json`
 - **Body**:
@@ -112,7 +112,7 @@ This endpoint allows a user to sign in using their username and password. Upon s
 ### Screenshot
 <img  src="postman_signin.png" width="80%" height="50%">
 
-### `GET /api/auth/secret`
+### `GET /ipaddress/secret`
 
 #### Description
 
@@ -121,7 +121,7 @@ This endpoint retrieves user secrets based on the user ID provided in the reques
 #### Request
 
 - **Method**: `GET`
-- **URL**: `/api/auth/secret`
+- **URL**: `/ipaddress/secret`
 - **Headers**:
   - `Authorization`: `Bearer <JWT Token>`
 
