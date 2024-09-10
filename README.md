@@ -62,7 +62,7 @@ You can view the stored data in MongoDB by following these steps:
 4. Go to the **Collections** tab to view and manage the data. Look for a collection named **`service`** where user data and other related information are stored.
 
 ### Screenshot
-<img  src="mongodb_collection.png" width="20%" height="20%">
+<img  src="mongodb_collection.png" width="80%" height="50%">
 
 ## API Endpoints
 
@@ -91,7 +91,7 @@ This endpoint allows a new user to sign up by providing a username, password, an
   - `password`: The password for the new account.
  
 ### Screenshot
-<img  src="postman_signup.png" width="20%" height="20%">
+<img  src="postman_signup.png" width="80%" height="50%">
 
 ### `POST /api/auth/signin`
 
@@ -110,7 +110,7 @@ This endpoint allows a user to sign in using their username and password. Upon s
   - `password`: The user's password.
 
 ### Screenshot
-<img  src="postman_signin.png" width="20%" height="20%">
+<img  src="postman_signin.png" width="80%" height="50%">
 
 ### `GET /api/auth/secret`
 
@@ -130,7 +130,7 @@ This endpoint retrieves user secrets based on the user ID provided in the reques
 - `userId`: The unique identifier of the user whose secrets you want to retrieve.
 
 ### Screenshot
-<img  src="postman_signup.png" width="20%" height="20%">
+<img  src="postman_signup.png" width="80%" height="50%">
 
 ## Responses
 
